@@ -1,14 +1,27 @@
-# ExMon
+# ExMon - API
+Esta API coleta informações do site pokeapi para informar informações do PokeMon como peso, poder, nome. tambem podemos atribuir um apelído e um treinador que ficará armazenado no banco de dados Ecto.
 
-To start your Phoenix server:
+Após baixar, pode-se rodar os comandos para preparar o banco
+```
+mix deps.get
+mix ecto.setup
+mix ecto.create
+mix ecto.migrate
+mix phx.server
+```
 
-  * Install dependencies with `mix deps.get`
-  * Create and migrate your database with `mix ecto.setup`
-  * Start Phoenix endpoint with `mix phx.server` or inside IEx with `iex -S mix phx.server`
 
-Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
+Dependências:
+```
+tesla 
+guardian
+ecto
+```
 
-Ready to run in production? Please [check our deployment guides](https://hexdocs.pm/phoenix/deployment.html).
+Desenvolvido durante um treinamento do Rafael Camarda.
+
+
+
 
 ## Learn more
 
